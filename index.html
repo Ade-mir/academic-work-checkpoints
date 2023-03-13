@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academic Work Checkpoints</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="home">
+        <nav>
+        <h1>Academic Work Checkpoints</h1>
+        <h2>By Ademir Alijagic</h2>
+    </nav>
+
+      <p>
+        Weekly checkpoints I delivered as part of my 12 week JavaScript bootcamp
+        held by Academic Work & Brights Learning. Each Checkpoint consists of a
+        a written assignment followed by my solution.
+      </p>
+      <p>
+        This website was made with vanilla CSS and HTML as a means to showcase
+        my knowledge within these technologies. For a more advanced version of
+        this website that included JavaScript go to this <a href="">website</a>
+      </p>
+      <div id="checkpoint-button-container">
+        <button
+          class="checkpoint-button hover-container"
+          onclick="location.href='#checkpoint-1'"
+        >
+          Checkpoint 1
+          <div class="overlay">
+            <p>Basic JavaScript Functions</p>
+          </div>
+        </button>
+        <button
+          class="checkpoint-button hover-container"
+          onclick="location.href='#checkpoint-2'"
+        >
+          Checkpoint 2
+          <div class="overlay">
+            <p>HTML Semantic & CSS Styling</p>
+          </div>
+        </button>
+        <button
+          class="checkpoint-button"
+          onclick="location.href='#checkpoint-3'"
+        >
+          Checkpoint 3
+        </button>
+        <button
+          class="checkpoint-button"
+          onclick="location.href='#checkpoint-4'"
+        >
+          Checkpoint 4
+        </button>
+        <button
+          class="checkpoint-button"
+          onclick="location.href='#checkpoint-5'"
+        >
+          Checkpoint 5
+        </button>
+        <button
+          class="checkpoint-button"
+          onclick="location.href='#checkpoint-6'"
+        >
+          Checkpoint 6
+        </button>
+        <button
+          class="checkpoint-button"
+          onclick="location.href='#checkpoint-7'"
+        >
+          Checkpoint 7
+        </button>
+        <button
+          class="checkpoint-button"
+          onclick="location.href='#checkpoint-8'"
+        >
+          Checkpoint 8
+        </button>
+        <button
+          class="checkpoint-button"
+          onclick="location.href='#checkpoint-9'"
+        >
+          Checkpoint 9
+        </button>
+        <button
+          class="checkpoint-button"
+          onclick="location.href='#checkpoint-10'"
+        >
+          Checkpoint 10
+        </button>
+        <button
+          class="checkpoint-button"
+          onclick="location.href='#checkpoint-11'"
+        >
+          Checkpoint 11
+        </button>
+        <button
+          class="checkpoint-button"
+          onclick="location.href='#checkpoint-12'"
+        >
+          Checkpoint 12
+        </button>
+      </div>
+    </section>
+    <section id="checkpoint-1">
+      <div id="cp1-question">
+        <h1 >Checkpoint 1 Question</h1>
+        <h2 class='checkpoint-level-title'>Level 1 a</h2>
+        <p>
+          Create a function
+          <span class="bold-text">volumeOfSphere(r)</span> that returns the
+          volume of a sphere of a given radius r.
+        </p>
+
+        <p>Example use:</p>
+        <pre>var result = volumeOfSphere(4);<br>// result =&gt; 268.082573106329</pre>
+          var result = volumeOfSphere(4); // result => 268.082573106329 b Create
+          a function countDown(fromN) that counts down from the provided number
+          down to zero (using console.log). If fromN is 0 or smaller, the
+          function should instead print the message "fromN must be bigger than
+          0". Example use: countDown(4); 4 3 2 1 0 countDown(-1) "fromN must be
+          bigger than 0" c Create a function printSequence(n, m) that prints
+          every number in a range n to m, with the following exceptions: if the
+          number is divisible by both 3 and 7, print "wubbalubba" instead of the
+          number if the number is divisible by 3, print "wubba" instead of the
+          number if the number is divisible by 7, print "lubba" instead of the
+          number Example use: printSequence(1, 23) 1 2 wubba 4 5 wubba lubba 8
+          wubba 10 11 wubba 13 lubba wubba 16 17 wubba 19 20 wubbalubba 22 23 d
+          Create a function holidayGreeting() that takes no arguments, which
+          prompts for your name and alerts out a personal holiday greeting
+          Example use: holidayGreeting(); "What is your name?" => 'Frank' "Happy
+          holidays Frank!" holidayGreeting(); "What is your name?" => 'Anna'
+          "Happy holidays Anna!" e Create a function
+          removeDivisibleByThreeOrFive(list) that takes a list of numbers as
+          input and returns the same list but with all numbers divisible by 3 or
+          5 removed. Example use: removeDivisibleByThreeOrFive([1, 2, 3, 4, 5,
+          6, 7, 8, 9, 10, 11, 12, 13, 14, 15]); // => [1, 2, 4, 7, 8, 11, 13,
+          14] Level 2 a Create a function printRepeatedRange(n, m, x) that
+          prints the range of numbers from n to m repeatedly x times. Example
+          use: printRepeatedRange(0, 3, 1) 0 1 2 3 printRepeatedRange(3, 6, 2) 3
+          4 5 6 3 4 5 6 printRepeatedRange(1, 2, 3) 1 2 1 2 1 2 b Create a
+          function printPattern(n, str) that produces the following patterns for
+          the corresponding input arguments. Example use: printPattern(5, '*') *
+          ** *** **** ***** printPattern(3, 'x') x xx xxx printPattern(6, 'ha ')
+          ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha c
+          Create a function dearSanta(forbidden), where forbidden is a list of
+          items that you are not allowed to ask for, that does the following:
+          Asks the user via a prompt what he or she wants for Christmas If the
+          requested item is in the list of forbidden items Santa alerts to you
+          that you've been naughty Otherwise Santa alerts to you that you've
+          been nice and will get X for Christmas Example use: /** * Example 1 */
+          dearSanta(['motorcycle', 'car']); "Santa: Ho ho ho! What do you want
+          for Christmas?" => 'socks' "Santa: You've been nice this year and will
+          get socks for Christmas!" /** * Example 2 */ dearSanta(['motorcycle',
+          'car']); "Santa: Ho ho ho! What do you want for Christmas?" =>
+          'motorcycle' "Santa: You've been naughty this year and will only get
+          coal in your stockings!" d Implement "Level 1 b" using recursion
+          instead of loops (Bonus!) e Implement "Level 1 c" using recursion
+          instead of loops.
+        </p>
+      </div>
+      <div id="cp1-solution">Checkpoint 1 Solution</div>
+    </section>
+    <section id="checkpoint-2">
+      <div id="cp2-question">Checkpoint 2 Question</div>
+      <div id="cp2-solution">Checkpoint 2 Solution</div>
+    </section>
+    <section id="checkpoint-3">
+      <div id="cp3-question">Checkpoint 3 Question</div>
+      <div id="cp3-solution">Checkpoint 3 Solution</div>
+    </section>
+    <section id="checkpoint-4">
+      <div id="cp4-question">Checkpoint 4 Question</div>
+      <div id="cp4-solution">Checkpoint 4 Solution</div>
+    </section>
+    <section id="checkpoint-5">
+      <div id="cp5-question">Checkpoint 5 Question</div>
+      <div id="cp5-solution">Checkpoint 5 Solution</div>
+    </section>
+    <section id="checkpoint-6">
+      <div id="cp6-question">Checkpoint 6 Question</div>
+      <div id="cp6-solution">Checkpoint 6 Solution</div>
+    </section>
+    <section id="checkpoint-7">
+      <div id="cp7-question">Checkpoint 7 Question</div>
+      <div id="cp7-solution">Checkpoint 7 Solution</div>
+    </section>
+    <section id="checkpoint-8">
+      <div id="cp8-question">Checkpoint 8 Question</div>
+      <div id="cp8-solution">Checkpoint 8 Solution</div>
+    </section>
+    <section id="checkpoint-9">
+      <div id="cp9-question">Checkpoint 9 Question</div>
+      <div id="cp9-solution">Checkpoint 9 Solution</div>
+    </section>
+    <section id="checkpoint-10">
+      <div id="cp10-question">Checkpoint 10 Question</div>
+      <div id="cp10-solution">Checkpoint 10 Solution</div>
+    </section>
+    <section id="checkpoint-11">
+      <div id="cp11-question">Checkpoint 11 Question</div>
+      <div id="cp11-solution">Checkpoint 11 Solution</div>
+    </section>
+    <section id="checkpoint-12">
+      <div id="cp12-question">Checkpoint 12 Question</div>
+      <div id="cp12-solution">Checkpoint 12 Solution</div>
+    </section>
+  </body>
+</html>
