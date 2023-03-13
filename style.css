@@ -1,16 +1,28 @@
+/* GENERAL */
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  margin: 0;
+  margin: 2rem;
   padding: 0;
 }
 
 a {
   font-weight: 700;
-  color: black;
-  text-decoration: none;
+  color: rgb(7, 162, 147);
+}
+
+figure {
+  margin: 0;
+  border: #f4f4f4 solid 1px;
+  padding: 1rem;
 }
 
 pre {
-  background-color: #f4f4f4;
+  color: white;
+  background-color: #3f3f3f;
   display: block;
   padding: 9px;
   margin: 0 0 12px;
@@ -19,14 +31,38 @@ pre {
   word-wrap: break-word;
   white-space: pre;
   white-space: pre-wrap;
+  border-radius: 0.5rem;
 }
 
 .bold-text {
   font-weight: 700;
 }
 
-section {
+.website-description {
+  margin: 10vh 20vw 0 20vw;
+  padding: 5vh 0;
+}
+
+#home {
   height: 100vh;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav h1,
+h2 {
+  font-size: 1.5rem;
+}
+
+/* SECTIONS */
+
+section {
+  padding-top: 1rem;
 }
 
 /* CHECKPOINT DIRECTORY */
@@ -83,4 +119,16 @@ section {
 .overlay p {
   font-size: 1.2rem;
   margin: 1rem;
+}
+
+/* CHECKPOINTS */
+
+.level-title {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+
+.sub-level {
+  border-top: 1px solid black;
+  padding: 1rem 0;
 }
