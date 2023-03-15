@@ -1,40 +1,32 @@
 function printSequence(n, m) {
+  let biggerNum;
+  let smallerNum;
+
   if (n === m) {
-    console.log(n);
+    console.log("Please choose two different numbers");
+  } else if (n < m) {
+    smallerNum = n;
+    biggerNum = m;
+  } else {
+    smallerNum = m;
+    biggerNum = n;
   }
-  if (n < m) {
-    for (let i = n; i <= m; i++) {
-      if (i % 3 === 0 && i % 7 === 0) {
-        console.log('wubbalubba');
-      } else if (i % 3 === 0) {
-        console.log('wubba');
-      } else if (i % 7 === 0) {
-        console.log('lubba');
-      } else console.log(i);
-    }
+
+  let newNumber = smallerNum + 1;
+
+  if (smallerNum % 3 === 0 && smallerNum % 7 === 0) {
+    console.log("wubbalubba");
+  } else if (smallerNum % 3 === 0) {
+    console.log("wubba");
+  } else if (smallerNum % 7 === 0) {
+    console.log("lubba");
+  } else {
+    console.log(smallerNum);
   }
-  if (n > m) {
-    for (let i = m; i <= n; i++) {
-      if (i % 3 === 0 && i % 7 === 0) {
-        console.log('wubbalubba');
-      } else if (i % 3 === 0) {
-        console.log('wubba');
-      } else if (i % 7 === 0) {
-        console.log('lubba');
-      } else console.log(i);
-      m;
-    }
+
+  if (newNumber < biggerNum) {
+    printSequence(newNumber, biggerNum);
   }
 }
 
 printSequence(1, 23);
-
-function countDown(fromN) {
-  console.log(fromN);
-
-  const newNumber = fromN - 1;
-
-  if (newNumber > -1) {
-    countDown(newNumber);
-  }
-}
