@@ -202,6 +202,7 @@ section {
   #home-container {
     justify-content: flex-start;
     gap: 1.5rem;
+    top: 0;
   }
   .website-description {
     margin: 0;
