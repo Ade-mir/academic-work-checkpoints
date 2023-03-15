@@ -13,102 +13,116 @@
         <h1>Academic Work Checkpoints</h1>
         <h2>Ademir Alijagic</h2>
       </nav>
-      <div class="website-description">
-        <p>
-          Below you can explore the weekly checkpoints I delivered as part of my
-          12 week JavaScript bootcamp which was held by Academic Work & Brights
-          Learning.
-        </p>
-        <p>
-          Each checkpoint consists of a a written assignment followed by my
-          solution.
-        </p>
-        <p>
-          This website was made with plain CSS and HTML as a means to showcase
-          my knowledge within these technologies. For a more advanced version of
-          this website that included JavaScript visit this
-          <a href="">website</a>
-        </p>
-      </div>
-      <div id="checkpoint-button-container">
-        <button
-          class="checkpoint-button hover-container"
-          onclick="location.href='#checkpoint-1'"
-        >
-          Checkpoint 1
-          <div class="overlay">
-            <p>Basic JavaScript Functions</p>
+      <div id="home-container">
+        <div class="website-description">
+          <p>
+            Below you can explore the weekly checkpoints I delivered as part of
+            my 12 week JavaScript bootcamp which was held by Academic Work &
+            Brights Learning.
+          </p>
+          <p>
+            Each checkpoint consists of a a written assignment followed by my
+            solution.
+          </p>
+          <p>
+            This website was made with plain CSS and HTML as a means to showcase
+            my knowledge within these technologies. For a more advanced version
+            of this website that included JavaScript visit this
+            <a href="">website</a>
+          </p>
+        </div>
+        <div id="checkpoint-button-container">
+          <button
+            class="checkpoint-button hover-container"
+            onclick="location.href='#checkpoint-1'"
+          >
+            Checkpoint 1
+            <div class="overlay">
+              <p>Basic JavaScript Functions</p>
+            </div>
+          </button>
+          <button
+            class="checkpoint-button hover-container"
+            onclick="location.href='#checkpoint-2'"
+          >
+            Checkpoint 2
+            <div class="overlay">
+              <p>HTML Structure & CSS Styling</p>
+            </div>
+          </button>
+          <button
+            class="checkpoint-button"
+            onclick="location.href='#checkpoint-3'"
+          >
+            Checkpoint 3
+          </button>
+          <button
+            class="checkpoint-button"
+            onclick="location.href='#checkpoint-4'"
+          >
+            Checkpoint 4
+          </button>
+          <button
+            class="checkpoint-button"
+            onclick="location.href='#checkpoint-5'"
+          >
+            Checkpoint 5
+          </button>
+          <button
+            class="checkpoint-button"
+            onclick="location.href='#checkpoint-6'"
+          >
+            Checkpoint 6
+          </button>
+          <button
+            class="checkpoint-button"
+            onclick="location.href='#checkpoint-7'"
+          >
+            Checkpoint 7
+          </button>
+          <button
+            class="checkpoint-button"
+            onclick="location.href='#checkpoint-8'"
+          >
+            Checkpoint 8
+          </button>
+          <button
+            class="checkpoint-button"
+            onclick="location.href='#checkpoint-9'"
+          >
+            Checkpoint 9
+          </button>
+          <button
+            class="checkpoint-button"
+            onclick="location.href='#checkpoint-10'"
+          >
+            Checkpoint 10
+          </button>
+          <button
+            class="checkpoint-button"
+            onclick="location.href='#checkpoint-11'"
+          >
+            Checkpoint 11
+          </button>
+          <button
+            class="checkpoint-button"
+            onclick="location.href='#checkpoint-12'"
+          >
+            Checkpoint 12
+          </button>
+        </div>
+        <div class="dropdown">
+          <span>Explore Checkpoints</span>
+          <div class="dropdown-content">
+            <p>
+              <a class="drowdown-link" href="#checkpoint-1"
+                >Checkpoint 1 Basic JavaScript Functions</a
+              >
+            </p>
+            <p>Checkpoint 2</p>
+            <p>Checkpoint 3</p>
           </div>
-        </button>
-        <button
-          class="checkpoint-button hover-container"
-          onclick="location.href='#checkpoint-2'"
-        >
-          Checkpoint 2
-          <div class="overlay">
-            <p>HTML Structure & CSS Styling</p>
-          </div>
-        </button>
-        <button
-          class="checkpoint-button"
-          onclick="location.href='#checkpoint-3'"
-        >
-          Checkpoint 3
-        </button>
-        <button
-          class="checkpoint-button"
-          onclick="location.href='#checkpoint-4'"
-        >
-          Checkpoint 4
-        </button>
-        <button
-          class="checkpoint-button"
-          onclick="location.href='#checkpoint-5'"
-        >
-          Checkpoint 5
-        </button>
-        <button
-          class="checkpoint-button"
-          onclick="location.href='#checkpoint-6'"
-        >
-          Checkpoint 6
-        </button>
-        <button
-          class="checkpoint-button"
-          onclick="location.href='#checkpoint-7'"
-        >
-          Checkpoint 7
-        </button>
-        <button
-          class="checkpoint-button"
-          onclick="location.href='#checkpoint-8'"
-        >
-          Checkpoint 8
-        </button>
-        <button
-          class="checkpoint-button"
-          onclick="location.href='#checkpoint-9'"
-        >
-          Checkpoint 9
-        </button>
-        <button
-          class="checkpoint-button"
-          onclick="location.href='#checkpoint-10'"
-        >
-          Checkpoint 10
-        </button>
-        <button
-          class="checkpoint-button"
-          onclick="location.href='#checkpoint-11'"
-        >
-          Checkpoint 11
-        </button>
-        <button
-          class="checkpoint-button"
-          onclick="location.href='#checkpoint-12'"
-        >
-          Checkpoint 12
-        </button>
+        </div>
       </div>
     </div>
     <section id="checkpoint-1">
@@ -216,13 +230,24 @@ function countDown(fromN) {
         <div class="sub-level">
           <div class="sub-level-question">
             <p>
-              <b>c&#41;</b> Create a function <b>printSequence(n, m)</b> that prints every number in a range n to m, with the following exceptions:
-              <ul>
-                <li>if the number is divisible by both <b>3</b> and <b>7</b>, print <b>"wubbalubba"</b> instead of the number</li>
-                <li>if the number is divisible by <b>3</b>, print <b>"wubba"</b> instead of the number</li>
-                <li>if the number is divisible by <b>7</b>, print <b>"lubba"</b> instead of the number</li>
-              </ul>
+              <b>c&#41;</b> Create a function <b>printSequence(n, m)</b> that
+              prints every number in a range n to m, with the following
+              exceptions:
             </p>
+            <ul>
+              <li>
+                if the number is divisible by both <b>3</b> and <b>7</b>, print
+                <b>"wubbalubba"</b> instead of the number
+              </li>
+              <li>
+                if the number is divisible by <b>3</b>, print
+                <b>"wubba"</b> instead of the number
+              </li>
+              <li>
+                if the number is divisible by <b>7</b>, print
+                <b>"lubba"</b> instead of the number
+              </li>
+            </ul>
             <p>Example use:</p>
             <pre>printSequence(1, 23)<br><br>1<br>2<br>wubba<br>4<br>5<br>wubba<br>lubba<br>8<br>wubba<br>10<br>11<br>wubba<br>13<br>lubba<br>wubba<br>16<br>17<br>wubba<br>19<br>20<br>wubbalubba<br>22<br>23</pre>
           </div>
@@ -259,17 +284,65 @@ function printSequence(n, m) {
 }
             </pre>
             <p>
-              To solve this one I made sure to add an <i>if</i> statement handling the event that <i>n</i> and <i>m</i> are the same number. It's not specified in the question what should happen, but I decided to print the given number if the function receives two equal numbers as arguments.
+              To solve this one I made sure to add an <i>if</i> statement
+              handling the event that <i>n</i> and <i>m</i> are the same number.
+              It's not specified in the question what should happen, but I
+              decided to print the given number if the function receives two
+              equal numbers as arguments.
             </p>
-            <p>An interesting thing to notice is that I used triple equals, also called <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality" target="_blank">strict equality</a> (===) instead of the double equlity operator (==) because I wanted to make sure the user gave me the same <i>type</i>, and not e.g. one <i>number</i> and one <i>string</i>. I could have made sure that the input only took the <i>number</i> type, but I felt it was outside of the scope of what this question was asking for.</p>
-            <p>Another interesting bit of code is that I used the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder" target="_blank">remainder (%) operator</a> to check if the current index was divisible by 3, 7, or both.</p>
-            <p>An alternative way of solving this case would have been to use <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while" target="_blank" >while</a> loops instead of <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for" target="_blank" >for</a> loops. I could've also written it with <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch" target="_blank">switch statements</a> which given a longer function could have improven the readability of the code.</p>
+            <p>
+              An interesting thing to notice is that I used triple equals, also
+              called
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality"
+                target="_blank"
+                >strict equality</a
+              >
+              (===) instead of the double equlity operator (==) because I wanted
+              to make sure the user gave me the same <i>type</i>, and not e.g.
+              one <i>number</i> and one <i>string</i>. I could have made sure
+              that the input only took the <i>number</i> type, but I felt it was
+              outside of the scope of what this question was asking for.
+            </p>
+            <p>
+              Another interesting bit of code is that I used the
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder"
+                target="_blank"
+                >remainder (%) operator</a
+              >
+              to check if the current index was divisible by 3, 7, or both.
+            </p>
+            <p>
+              An alternative way of solving this case would have been to use
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while"
+                target="_blank"
+                >while</a
+              >
+              loops instead of
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for"
+                target="_blank"
+                >for</a
+              >
+              loops. I could've also written it with
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch"
+                target="_blank"
+                >switch statements</a
+              >
+              which given a longer function could have improven the readability
+              of the code.
+            </p>
           </div>
         </div>
         <div class="sub-level">
           <div class="sub-level-question">
             <p>
-              <b>d&#41;</b> Create a function <b>holidayGreeting()</b> that takes no arguments, which <b>prompts</b> for your name and <b>alerts</b> out a personal holiday greeting
+              <b>d&#41;</b> Create a function <b>holidayGreeting()</b> that
+              takes no arguments, which <b>prompts</b> for your name and
+              <b>alerts</b> out a personal holiday greeting
             </p>
             <p>Example use:</p>
             <pre>holidayGreeting();<br>"What is your name?"<br>=&gt; 'Frank'<br>"Happy holidays Frank!"<br><br>holidayGreeting();<br>"What is your name?"<br>=&gt; 'Anna'<br>"Happy holidays Anna!"</pre>
@@ -283,8 +356,38 @@ function holidayGreeting() {
 }
             </pre>
             <p>
-              This code was relatively short and sweet, I made a constant called <i>name</i> which is defined as the result of the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt" target="_blank" rel="noopener noreferrer">window.prompt()</a> which opens as soon as the function runs. This <i>name</i> is then used in the following <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/alert" target="_blank" rel="noopener noreferrer">window.alert()</a> which runs using <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals" target="_blank" rel="noopener noreferrer">template literals</a> in order to combine the name of the person directly into the message.</p>
-              <p>If I had used regular quotes (""), or ('') without the template strings (``) the name constant wouldn't have appeared, instead what would've been alerted would be "Happy holidays name!" regardless of what the <i>const name</i> had saved.</p>
+              This code was relatively short and sweet, I made a constant called
+              <i>name</i> which is defined as the result of the
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt"
+                target="_blank"
+                rel="noopener noreferrer"
+                >window.prompt()</a
+              >
+              which opens as soon as the function runs. This <i>name</i> is then
+              used in the following
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/API/Window/alert"
+                target="_blank"
+                rel="noopener noreferrer"
+                >window.alert()</a
+              >
+              which runs using
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals"
+                target="_blank"
+                rel="noopener noreferrer"
+                >template literals</a
+              >
+              in order to combine the name of the person directly into the
+              message.
+            </p>
+            <p>
+              If I had used regular quotes (""), or ('') without the template
+              strings (``) the name constant wouldn't have appeared, instead
+              what would've been alerted would be "Happy holidays name!"
+              regardless of what the <i>const name</i> had saved.
+            </p>
           </div>
         </div>
       </div>
