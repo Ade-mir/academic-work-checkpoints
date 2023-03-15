@@ -387,6 +387,308 @@ function holidayGreeting() {
             </p>
           </div>
         </div>
+        <div class="sub-level">
+          <div class="sub-level-question">
+            <p>
+              <b>e&#41;</b> Create a function
+              <b>removeDivisibleByThreeOrFive(list)</b> that takes a
+              <b>list</b> of numbers as input and returns the same list but with
+              all numbers divisible by 3 or 5 removed.
+            </p>
+            <p>Example use:</p>
+            <pre>removeDivisibleByThreeOrFive([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]);<br>// =&gt; [1, 2, 4, 7, 8, 11, 13, 14]</pre>
+          </div>
+          <div id="sub-level-solution">
+            <p>Solution:</p>
+            <pre>
+function removeDivisibleByThreeOrFive(list) {
+  return list.filter((number) => {
+    return number % 3 !== 0 && number % 5 !== 0;
+  });
+}
+            </pre>
+            <p>
+              I used the
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter"
+                target="_blank"
+                rel="noopener noreferrer"
+                >filter() method</a
+              >
+              together with
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder"
+                target="_blank"
+                rel="noopener noreferrer"
+                >remainder (%) operator</a
+              >
+              to check if the numbers were not divisible by 3 or 5. The filter()
+              method takes a callback function as an argument and returns a new
+              array containing only the elements for which the callback function
+              In this function that means all numbers that are not divisible by
+              3 or 5.
+            </p>
+            <p>
+              I was initally having issues getting anything to console log when
+              testing this function, because I forgot to return the number
+              inside as well as the list. The first time filter returns true or
+              false if the filtered item meets the condition, then it returns
+              the item when true.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="level">
+        <div class="sub-level">
+          <h2 class="level-title">Level 2</h2>
+          <div class="sub-level-question">
+            <p>
+              <b>a&#41;</b> Create a function
+              <b>printRepeatedRange(x, m, n)</b> that prints the range of
+              numbers from <b>n</b> to <b>m</b> repeatedly <b>x</b> times.
+            </p>
+            <p>Example use:</p>
+            <pre>printRepeatedRange(0, 3, 1)<br><br>0<br>1<br>2<br>3</pre>
+            <pre>printRepeatedRange(3, 6, 2)<br><br>3<br>4<br>5<br>6<br>3<br>4<br>5<br>6</pre>
+            <pre>printRepeatedRange(1, 2, 3)<br><br>1<br>2<br>1<br>2<br>1<br>2</pre>
+          </div>
+          <div id="sub-level-solution">
+            <p>Solution:</p>
+            <pre>
+function printRepeatedRange(n, m, x) {
+  for (let i = 0; i &lt; x; i++) {
+    for (let i = n; i &lt;= m; i++) {
+      console.log(i);
+    }
+  }
+}</pre
+            >
+            <p>
+              Here I used a <i>for loop</i> within a <i>for loop</i>. The inner
+              loop console logs the range from n to m, whilst the outer loop
+              runs the inner one x times. Read more about
+              <a
+                href="https://www.freecodecamp.org/news/nesting-for-loops-in-javascript/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >nested for loops here</a
+              >.
+            </p>
+          </div>
+        </div>
+        <div class="sub-level">
+          <div class="sub-level-question">
+            <p>
+              <b>b&#41;</b> Create a function <b>printPattern(n, str)</b> that
+              produces the following patterns for the corresponding input
+              arguments.
+            </p>
+            <p>Example use:</p>
+            <pre>printPattern(5, '*')<br><br>*<br>**<br>***<br>****<br>*****</pre>
+            <pre>printPattern(3, 'x')<br><br>x<br>xx<br>xxx</pre>
+            <pre>printPattern(6, 'ha ')<br><br>ha<br>ha ha<br>ha ha ha<br>ha ha ha ha<br>ha ha ha ha ha<br>ha ha ha ha ha ha</pre>
+          </div>
+          <div id="sub-level-solution">
+            <p>Solution:</p>
+            <pre>
+function printPattern(n, str) {
+  result = '';
+
+  for (let i = 0; i &lt; n; i++) {
+    result += str;
+    console.log(result);
+  }
+}
+
+printPattern(5, '*');</pre
+            >
+            <p>
+              Works like a charm. Here I could have alternatively used the
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat"
+                target="_blank"
+                rel="noopener noreferrer"
+                >concat() method</a
+              >
+              on the string instead of adding to the result, but in essense that
+              is what the concat() method does, adds strings together. I also
+              used a <i>for loop</i> from 0 to n.
+            </p>
+          </div>
+        </div>
+        <div class="sub-level">
+          <div class="sub-level-question">
+            <p>
+              <b>c&#41;</b> Create a function <b>dearSanta(forbidden)</b> where
+              <b>forbidden</b> is a list of items that you are not allowed to
+              ask for, that does the following:
+            </p>
+
+            <ul>
+              <li>
+                Asks the user via a prompt what he or she wants for Christmas
+              </li>
+              <li>
+                If the requested item is in the list of <b>forbidden</b> items
+                Santa alerts to you that you've been naughty
+              </li>
+              <li>
+                Otherwise Santa alerts to you that you've been nice and will get
+                X for Christmas
+              </li>
+            </ul>
+            <p>Example use:</p>
+            <pre>/**<br> * Example 1<br> */<br>dearSanta(['motorcycle', 'car']);<br><br>"Santa: Ho ho ho! What do you want for Christmas?"<br>=&gt; 'socks'<br>"Santa: You've been nice this year and will get socks for Christmas!"</pre>
+            <pre>/**<br> * Example 2<br> */<br>dearSanta(['motorcycle', 'car']);<br><br>"Santa: Ho ho ho! What do you want for Christmas?"<br>=&gt; 'motorcycle'<br>"Santa: You've been naughty this year and will only get coal in your stockings!"</pre>
+          </div>
+          <div id="sub-level-solution">
+            <p>Solution:</p>
+            <pre>
+function dearSanta(forbidden) {
+  const answer = prompt("Santa: Ho ho ho! What do you want for Christmas?");
+
+  if (forbidden.includes(answer)) {
+    alert(
+      "Santa: You've been naughty this year and will only get coal in your stockings!"
+    );
+  } else
+    alert(
+      `Santa: You've been nice this year and will get ${answer} for Christmas!`
+    );
+}
+
+dearSanta(["motorcycle", "car"]);
+</pre
+            >
+            <p>
+              For this solution I used the
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes"
+                target="_blank"
+                rel="noopener noreferrer"
+                >includes() method</a
+              >
+              to determines whether an array included the forbidden list or not.
+              If any index value within the forbidden array list would signal
+              true, it would return the first "naughty alert", else it would
+              return false and return the second alert message.
+            </p>
+          </div>
+        </div>
+        <div class="sub-level">
+          <div class="sub-level-question">
+            <p>
+              <b>d&#41;</b> Implement "Level 1 b" using recursion instead of
+              loops.
+            </p>
+          </div>
+          <div id="sub-level-solution">
+            <p>Solution:</p>
+            <pre>
+function countDown(fromN) {
+  console.log(fromN);
+
+  const newNumber = fromN - 1;
+
+  if (newNumber > -1) {
+    countDown(newNumber);
+  }
+}
+</pre
+            >
+            <p>
+              The
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Glossary/Recursion"
+                target="_blank"
+                rel="noopener noreferrer"
+                >recursive function</a
+              >
+              starts by console logging the given argument <i>fromN</i>, then
+              instead of iterating over the number, it defines a new constant
+              <i>newNumber</i> which is 1 less than the argument. The last line
+              is the <i>stop condition</i> within the recursive function that
+              says that as long as the number is not negative, it will call the
+              countDown function by referencing the <i>newNumber</i> within
+              itself, which is what makes this a recursive function.
+            </p>
+            <p>
+              It's important to have a stop condition because otherwise this
+              function would be stuck in an
+              <a
+                href="https://flexiple.com/javascript/infinite-loops-javascript/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >infinite loop</a
+              >
+              as there would always exist a number smaller than
+              <i>fromN</i>
+            </p>
+          </div>
+        </div>
+        <div class="sub-level">
+          <div class="sub-level-question">
+            <p>
+              <b>e&#41;</b> Implement "Level 1 c" using recursion instead of
+              loops.
+            </p>
+          </div>
+          <div id="sub-level-solution">
+            <p>Solution:</p>
+            <pre>
+function printSequence(n, m) {
+  let biggerNum;
+  let smallerNum;
+
+  if (n === m) {
+    console.log("Please choose two different numbers");
+  } else if (n &lt; m) {
+    smallerNum = n;
+    biggerNum = m;
+  } else {
+    smallerNum = m;
+    biggerNum = n;
+  }
+
+  let newNumber = smallerNum + 1;
+
+  if (smallerNum % 3 === 0 && smallerNum % 7 === 0) {
+    console.log("wubbalubba");
+  } else if (smallerNum % 3 === 0) {
+    console.log("wubba");
+  } else if (smallerNum % 7 === 0) {
+    console.log("lubba");
+  } else {
+    console.log(smallerNum);
+  }
+
+  if (newNumber &lt; biggerNum) {
+    printSequence(newNumber, biggerNum);
+  }
+}
+
+printSequence(1, 23);
+</pre
+            >
+            <p>
+              For the last bonus question in this checkpoint I created two
+              variables <i>biggerNum</i> and <i>smallerNum</i>, and left them
+              undefined. Then I handled the case where <i>n</i> is the same as
+              <i>m</i> and returned a string asking for different sized numbers.
+            </p>
+            <p>
+              If the numbers are different I then handled the scenario where
+              <i>n</i>
+              might be bigger than <i>m</i> and vice versa. Now regardless of
+              which number is smaller, the subsequent code works the same by
+              setting the range values to be equal to the previously mentioned
+              variables <i>biggerNum</i> and <i>smallerNum</i>. After that I
+              used <i>if else</i> statments to check whether or not the current
+              number was divisible by 3, 7, or both, followed by a stop
+              condition when the <i>smallerNum</i> reaches the <i>biggerNum</i>.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
     <!-- <section id="checkpoint-2">

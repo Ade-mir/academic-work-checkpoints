@@ -1,5 +1,5 @@
 function dearSanta(forbidden) {
-  const answer = prompt('Santa: Ho ho ho! What do you want for Christmas?');
+  const answer = prompt("Santa: Ho ho ho! What do you want for Christmas?");
 
   if (forbidden.includes(answer)) {
     alert(
@@ -11,4 +11,6 @@ function dearSanta(forbidden) {
     );
 }
 
-dearSanta(['motorcycle', 'car']);
+dearSanta(["motorcycle", "car"]);
+
+// For this solution I used the includes() method to determines whether an array included the forbidden list or not. If any index value within the forbidden array list would signal true, it would return the first "naughty alert", else it would return false and return the second alert message.

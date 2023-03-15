@@ -17,3 +17,5 @@ function countDown(fromN) {
     countDown(newNumber);
   }
 }
+
+// The recursive function starts by console logging the given argument fromN, then instead of iterating over the number, it defines a new constant which is 1 less than the argument. The last line si the stop condition that says that as long as the number is not negative, it will call the countDown function by referencing itself, which is what is called a callback function.
