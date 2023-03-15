@@ -207,6 +207,7 @@ section {
   h1 {
     font-size: 1.2rem;
   }
+
   body {
     margin: 1rem;
   }
@@ -217,7 +218,9 @@ section {
   }
   .website-description {
     margin: 0;
+    font-size: 0.9rem;
   }
+
   #checkpoint-button-container {
     display: none;
   }
