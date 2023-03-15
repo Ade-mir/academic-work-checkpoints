@@ -50,6 +50,7 @@ pre {
 
 #home-container {
   position: relative;
+  top: -2rem;
   height: 85%;
   display: flex;
   max-height: max-content;
