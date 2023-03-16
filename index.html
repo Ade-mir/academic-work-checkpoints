@@ -8,186 +8,179 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="home">
-      <nav>
-        <h1>Academic Work Checkpoints</h1>
-        <h2>Ademir Alijagic</h2>
-      </nav>
-      <div id="home-container">
-        <div class="website-description">
-          <p>
-            Below you can explore the weekly checkpoints I delivered as part of
-            my 12 week JavaScript bootcamp which was held by Academic Work &
-            Brights Learning. Each checkpoint consists of a a written assignment
-            followed by my solution.
-          </p>
-          <p>
-            This website was made with plain CSS and HTML as a means to showcase
-            my knowledge within these technologies. For a more advanced version
-            of this website that included JavaScript visit this
-            <a href="">website</a>.
-          </p>
+    <nav>
+      <button
+        class="checkpoint-button hover-container"
+        onclick="location.href='#checkpoint-1'"
+      >
+        1
+        <div class="overlay">
+          <p>JavaScript Programming Fundamentals</p>
         </div>
-        <div id="checkpoint-button-container">
-          <button
-            class="checkpoint-button hover-container"
-            onclick="location.href='#checkpoint-1'"
-          >
-            Checkpoint 1
-            <div class="overlay">
-              <p>JS Programming Fundamentals</p>
-            </div>
-          </button>
-          <button
-            class="checkpoint-button hover-container"
-            onclick="location.href='#checkpoint-2'"
-          >
-            Checkpoint 2
-            <div class="overlay">
-              <p>Web Development Fundamentals</p>
-            </div>
-          </button>
-          <button
-            class="checkpoint-button"
-            onclick="location.href='#checkpoint-3'"
-          >
-            Checkpoint 3
-          </button>
-          <button
-            class="checkpoint-button"
-            onclick="location.href='#checkpoint-4'"
-          >
-            Checkpoint 4
-          </button>
-          <button
-            class="checkpoint-button"
-            onclick="location.href='#checkpoint-5'"
-          >
-            Checkpoint 5
-          </button>
-          <button
-            class="checkpoint-button"
-            onclick="location.href='#checkpoint-6'"
-          >
-            Checkpoint 6
-          </button>
-          <button
-            class="checkpoint-button"
-            onclick="location.href='#checkpoint-7'"
-          >
-            Checkpoint 7
-          </button>
-          <button
-            class="checkpoint-button"
-            onclick="location.href='#checkpoint-8'"
-          >
-            Checkpoint 8
-          </button>
-          <button
-            class="checkpoint-button"
-            onclick="location.href='#checkpoint-9'"
-          >
-            Checkpoint 9
-          </button>
-          <button
-            class="checkpoint-button"
-            onclick="location.href='#checkpoint-10'"
-          >
-            Checkpoint 10
-          </button>
-          <button
-            class="checkpoint-button"
-            onclick="location.href='#checkpoint-11'"
-          >
-            Checkpoint 11
-          </button>
-          <button
-            class="checkpoint-button"
-            onclick="location.href='#checkpoint-12'"
-          >
-            Checkpoint 12
-          </button>
+      </button>
+      <button
+        class="checkpoint-button hover-container"
+        onclick="location.href='./checkpoint-2.html#checkpoint-2'"
+      >
+        2
+        <div class="overlay">
+          <p>Web Development Fundamentals</p>
         </div>
-        <div class="dropdown">
-          <span>Explore Checkpoints</span>
-          <div class="dropdown-content">
-            <p>
-              <a class="drowdown-link" href="#checkpoint-1"
-                >Checkpoint 1 Basic JavaScript Functions</a
-              >
-            </p>
-            <p>Checkpoint 2</p>
-            <p>Checkpoint 3</p>
-          </div>
+      </button>
+      <button
+        class="checkpoint-button hover-container"
+        onclick="location.href='./checkpoint-3.html#checkpoint-3'"
+      >
+        3
+        <div class="overlay">
+          <p>JavaScript Language Deep Dive</p>
         </div>
-      </div>
+      </button>
+      <button
+        class="checkpoint-button hover-container"
+        onclick="location.href='./checkpoint-4.html#checkpoint-4'"
+      >
+        4
+        <div class="overlay">
+          <p>Browser API's and Abstractions</p>
+        </div>
+      </button>
+      <button
+        class="checkpoint-button hover-container"
+        onclick="location.href='./checkpoint-5.html#checkpoint-5'"
+      >
+        5
+        <div class="overlay">
+          <p>Advanced, Functional and Asynchronous JavaScript</p>
+        </div>
+      </button>
+      <button
+        class="checkpoint-button hover-container"
+        onclick="location.href='./checkpoint-6.html#checkpoint-6'"
+      >
+        6
+        <div class="overlay">
+          <p>User Experience</p>
+        </div>
+      </button>
+      <button
+        class="checkpoint-button hover-container"
+        onclick="location.href='./checkpoint-7.html#checkpoint-7'"
+      >
+        7
+        <div class="overlay">
+          <p>Layout and Styling</p>
+        </div>
+      </button>
+      <button
+        class="checkpoint-button hover-container"
+        onclick="location.href='./checkpoint-8.html#checkpoint-8'"
+      >
+        8
+        <div class="overlay">
+          <p>Git, Databases, Storage and Retrieval</p>
+        </div>
+      </button>
+      <button
+        class="checkpoint-button hover-container"
+        onclick="location.href='./checkpoint-9.html#checkpoint-9'"
+      >
+        9
+        <div class="overlay">
+          <p>Server Development</p>
+        </div>
+      </button>
+      <button
+        class="checkpoint-button hover-container"
+        onclick="location.href='./checkpoint-10.html#checkpoint-10'"
+      >
+        10
+        <div class="overlay">
+          <p>Building User Interfaces</p>
+        </div>
+      </button>
+    </nav>
+    <div id="website-description">
+      <p>
+        Explore the checkpoints I delivered as part of my JavaScript bootcamp
+        held by Academic Work & Brights Learning. Each checkpoint consists of a
+        a written assignment followed by my solution.
+      </p>
+      <p>
+        This website was made with plain CSS and HTML as a means to showcase my
+        knowledge within these technologies. For a more advanced version of this
+        website that included JavaScript visit this
+        <a href="">website</a>.
+      </p>
     </div>
-    <section id="checkpoint-1">
-      <h1>Checkpoint 1</h1>
-      <div id="level">
-        <h2 class="level-title">Level 1</h2>
-        <div class="sub-level">
-          <div class="sub-level-question">
-            <p>
-              <b>a&#41;</b> Create a function <b>volumeOfSphere(r)</b> that
-              returns the volume of a sphere of a given radius <b>r</b>.
-            </p>
-            <p>Example use:</p>
-            <pre>var result = volumeOfSphere(4);<br>// result =&gt; 268.082573106329</pre>
-          </div>
-          <div id="sub-level-solution">
-            <p>Solution:</p>
-            <pre>
+    <div id="main-container">
+      <section id="checkpoint-1">
+        <h1>Checkpoint 1</h1>
+        <div id="level">
+          <h2 class="level-title">Level 1</h2>
+          <div class="sub-level">
+            <div class="sub-level-question">
+              <p>
+                <b>a&#41;</b> Create a function <b>volumeOfSphere(r)</b> that
+                returns the volume of a sphere of a given radius <b>r</b>.
+              </p>
+              <p>Example use:</p>
+              <pre>var result = volumeOfSphere(4);<br>// result =&gt; 268.082573106329</pre>
+            </div>
+            <div id="sub-level-solution">
+              <p>Solution:</p>
+              <pre>
 function volumeOfSphere(r) {
   return (4 / 3) * Math.PI * r ** 3;
 }
               
 console.log(volumeOfSphere(3)); // 113.09
 console.log(volumeOfSphere(2)); // 33.51
-            </pre>
-            <p>
-              I used the unbuilt JavaScript
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/PI"
-                target="”_blank”"
-                >Math.PI static data property</a
+            </pre
               >
-              to calculate the volume of a sphere. I found the formula on Google
-              as shown below.
-            </p>
-            <figure>
-              <img
-                src="/Assets/checkpoint-1/sphere-volume.png"
-                alt="Formula for the volume of a sphere."
-              />
-            </figure>
-            <p>
-              In addition I used the
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Exponentiation"
-                target="”_blank”"
-                >The exponentiation (**) operator</a
-              >
-              instead of e.g. writing <i>r * r * r</i>, which would be
-              mathematically correct, but would result in less elegant code.
-            </p>
+              <p>
+                I used the unbuilt JavaScript
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/PI"
+                  target="”_blank”"
+                  >Math.PI static data property</a
+                >
+                to calculate the volume of a sphere. I found the formula on
+                Google as shown below.
+              </p>
+              <figure>
+                <img
+                  src="/Assets/checkpoint-1/sphere-volume.png"
+                  alt="Formula for the volume of a sphere."
+                />
+              </figure>
+              <p>
+                In addition I used the
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Exponentiation"
+                  target="”_blank”"
+                  >The exponentiation (**) operator</a
+                >
+                instead of e.g. writing <i>r * r * r</i>, which would be
+                mathematically correct, but would result in less elegant code.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="sub-level">
-          <div class="sub-level-question">
-            <p>
-              <b>b&#41;</b> Create a function <b>countDown(fromN)</b> that
-              counts down from the provided number down to zero (using
-              console.log). If <b>fromN</b> is 0 or smaller, the function should
-              instead print the message "fromN must be bigger than 0".
-            </p>
-            <p>Example use:</p>
-            <pre>countDown(4);<br><br>4<br>3<br>2<br>1<br>0</pre>
-            <pre>countDown(-1)<br><br>"fromN must be bigger than 0"</pre>
-          </div>
-          <div id="sub-level-solution">
-            <p>Solution:</p>
-            <pre>
+          <div class="sub-level">
+            <div class="sub-level-question">
+              <p>
+                <b>b&#41;</b> Create a function <b>countDown(fromN)</b> that
+                counts down from the provided number down to zero (using
+                console.log). If <b>fromN</b> is 0 or smaller, the function
+                should instead print the message "fromN must be bigger than 0".
+              </p>
+              <p>Example use:</p>
+              <pre>countDown(4);<br><br>4<br>3<br>2<br>1<br>0</pre>
+              <pre>countDown(-1)<br><br>"fromN must be bigger than 0"</pre>
+            </div>
+            <div id="sub-level-solution">
+              <p>Solution:</p>
+              <pre>
 function countDown(fromN) {
   if (fromN &lt;= 0) {
     console.log('fromN must be bigger than 0');
@@ -197,60 +190,61 @@ function countDown(fromN) {
     }
   }
 }
-            </pre>
-            <p>
-              Here I made sure to add the conditional
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else"
-                target="”_blank”"
-                >if statement</a
+            </pre
               >
-              handling the scenario where the user inputs 0 or less first
-              because it's best practice to not open for potential bugs where
-              both statements resolve to true. This could have potentially
-              happened had I chosen different operator values in the for loop,
-              and switched around the conditional statements.
-            </p>
-            <p>
-              I also used an
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else"
-                target="”_blank”"
-                >else statement</a
-              >, again to emphasise that there should only be one segment of
-              code that should run, either the <i>if</i>, or the <i>else</i>. If
-              I had used two <i>if</i> statements instead this would also have
-              opened the door to potential bugs.
-            </p>
+              <p>
+                Here I made sure to add the conditional
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else"
+                  target="”_blank”"
+                  >if statement</a
+                >
+                handling the scenario where the user inputs 0 or less first
+                because it's best practice to not open for potential bugs where
+                both statements resolve to true. This could have potentially
+                happened had I chosen different operator values in the for loop,
+                and switched around the conditional statements.
+              </p>
+              <p>
+                I also used an
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else"
+                  target="”_blank”"
+                  >else statement</a
+                >, again to emphasise that there should only be one segment of
+                code that should run, either the <i>if</i>, or the <i>else</i>.
+                If I had used two <i>if</i> statements instead this would also
+                have opened the door to potential bugs.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="sub-level">
-          <div class="sub-level-question">
-            <p>
-              <b>c&#41;</b> Create a function <b>printSequence(n, m)</b> that
-              prints every number in a range n to m, with the following
-              exceptions:
-            </p>
-            <ul>
-              <li>
-                if the number is divisible by both <b>3</b> and <b>7</b>, print
-                <b>"wubbalubba"</b> instead of the number
-              </li>
-              <li>
-                if the number is divisible by <b>3</b>, print
-                <b>"wubba"</b> instead of the number
-              </li>
-              <li>
-                if the number is divisible by <b>7</b>, print
-                <b>"lubba"</b> instead of the number
-              </li>
-            </ul>
-            <p>Example use:</p>
-            <pre>printSequence(1, 23)<br><br>1<br>2<br>wubba<br>4<br>5<br>wubba<br>lubba<br>8<br>wubba<br>10<br>11<br>wubba<br>13<br>lubba<br>wubba<br>16<br>17<br>wubba<br>19<br>20<br>wubbalubba<br>22<br>23</pre>
-          </div>
-          <div id="sub-level-solution">
-            <p>Solution:</p>
-            <pre>
+          <div class="sub-level">
+            <div class="sub-level-question">
+              <p>
+                <b>c&#41;</b> Create a function <b>printSequence(n, m)</b> that
+                prints every number in a range n to m, with the following
+                exceptions:
+              </p>
+              <ul>
+                <li>
+                  if the number is divisible by both <b>3</b> and <b>7</b>,
+                  print <b>"wubbalubba"</b> instead of the number
+                </li>
+                <li>
+                  if the number is divisible by <b>3</b>, print
+                  <b>"wubba"</b> instead of the number
+                </li>
+                <li>
+                  if the number is divisible by <b>7</b>, print
+                  <b>"lubba"</b> instead of the number
+                </li>
+              </ul>
+              <p>Example use:</p>
+              <pre>printSequence(1, 23)<br><br>1<br>2<br>wubba<br>4<br>5<br>wubba<br>lubba<br>8<br>wubba<br>10<br>11<br>wubba<br>13<br>lubba<br>wubba<br>16<br>17<br>wubba<br>19<br>20<br>wubbalubba<br>22<br>23</pre>
+            </div>
+            <div id="sub-level-solution">
+              <p>Solution:</p>
+              <pre>
 function printSequence(n, m) {
   if (n === m) {
     console.log(n);
@@ -279,182 +273,187 @@ function printSequence(n, m) {
     }
   }
 }
-            </pre>
-            <p>
-              To solve this one I made sure to add an <i>if</i> statement
-              handling the event that <i>n</i> and <i>m</i> are the same number.
-              It's not specified in the question what should happen, but I
-              decided to print the given number if the function receives two
-              equal numbers as arguments.
-            </p>
-            <p>
-              An interesting thing to notice is that I used triple equals, also
-              called
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality"
-                target="_blank"
-                >strict equality</a
+            </pre
               >
-              (===) instead of the double equlity operator (==) because I wanted
-              to make sure the user gave me the same <i>type</i>, and not e.g.
-              one <i>number</i> and one <i>string</i>. I could have made sure
-              that the input only took the <i>number</i> type, but I felt it was
-              outside of the scope of what this question was asking for.
-            </p>
-            <p>
-              Another interesting bit of code is that I used the
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder"
-                target="_blank"
-                >remainder (%) operator</a
-              >
-              to check if the current index was divisible by 3, 7, or both.
-            </p>
-            <p>
-              An alternative way of solving this case would have been to use
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while"
-                target="_blank"
-                >while</a
-              >
-              loops instead of
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for"
-                target="_blank"
-                >for</a
-              >
-              loops. I could've also written it with
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch"
-                target="_blank"
-                >switch statements</a
-              >
-              which given a longer function could have improven the readability
-              of the code.
-            </p>
+              <p>
+                To solve this one I made sure to add an <i>if</i> statement
+                handling the event that <i>n</i> and <i>m</i> are the same
+                number. It's not specified in the question what should happen,
+                but I decided to print the given number if the function receives
+                two equal numbers as arguments.
+              </p>
+              <p>
+                An interesting thing to notice is that I used triple equals,
+                also called
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality"
+                  target="_blank"
+                  >strict equality</a
+                >
+                (===) instead of the double equlity operator (==) because I
+                wanted to make sure the user gave me the same <i>type</i>, and
+                not e.g. one <i>number</i> and one <i>string</i>. I could have
+                made sure that the input only took the <i>number</i> type, but I
+                felt it was outside of the scope of what this question was
+                asking for.
+              </p>
+              <p>
+                Another interesting bit of code is that I used the
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder"
+                  target="_blank"
+                  >remainder (%) operator</a
+                >
+                to check if the current index was divisible by 3, 7, or both.
+              </p>
+              <p>
+                An alternative way of solving this case would have been to use
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while"
+                  target="_blank"
+                  >while</a
+                >
+                loops instead of
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for"
+                  target="_blank"
+                  >for</a
+                >
+                loops. I could've also written it with
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch"
+                  target="_blank"
+                  >switch statements</a
+                >
+                which given a longer function could have improven the
+                readability of the code.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="sub-level">
-          <div class="sub-level-question">
-            <p>
-              <b>d&#41;</b> Create a function <b>holidayGreeting()</b> that
-              takes no arguments, which <b>prompts</b> for your name and
-              <b>alerts</b> out a personal holiday greeting
-            </p>
-            <p>Example use:</p>
-            <pre>holidayGreeting();<br>"What is your name?"<br>=&gt; 'Frank'<br>"Happy holidays Frank!"<br><br>holidayGreeting();<br>"What is your name?"<br>=&gt; 'Anna'<br>"Happy holidays Anna!"</pre>
-          </div>
-          <div id="sub-level-solution">
-            <p>Solution:</p>
-            <pre>
+          <div class="sub-level">
+            <div class="sub-level-question">
+              <p>
+                <b>d&#41;</b> Create a function <b>holidayGreeting()</b> that
+                takes no arguments, which <b>prompts</b> for your name and
+                <b>alerts</b> out a personal holiday greeting
+              </p>
+              <p>Example use:</p>
+              <pre>holidayGreeting();<br>"What is your name?"<br>=&gt; 'Frank'<br>"Happy holidays Frank!"<br><br>holidayGreeting();<br>"What is your name?"<br>=&gt; 'Anna'<br>"Happy holidays Anna!"</pre>
+            </div>
+            <div id="sub-level-solution">
+              <p>Solution:</p>
+              <pre>
 function holidayGreeting() {
   const name = prompt('What is your name?');
   alert(`Happy holidays ${name}!`);
 }
-            </pre>
-            <p>
-              This code was relatively short and sweet, I made a constant called
-              <i>name</i> which is defined as the result of the
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt"
-                target="_blank"
-                rel="noopener noreferrer"
-                >window.prompt()</a
+            </pre
               >
-              which opens as soon as the function runs. This <i>name</i> is then
-              used in the following
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/API/Window/alert"
-                target="_blank"
-                rel="noopener noreferrer"
-                >window.alert()</a
-              >
-              which runs using
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals"
-                target="_blank"
-                rel="noopener noreferrer"
-                >template literals</a
-              >
-              in order to combine the name of the person directly into the
-              message.
-            </p>
-            <p>
-              If I had used regular quotes (""), or ('') without the template
-              strings (``) the name constant wouldn't have appeared, instead
-              what would've been alerted would be "Happy holidays name!"
-              regardless of what the <i>const name</i> had saved.
-            </p>
+              <p>
+                This code was relatively short and sweet, I made a constant
+                called
+                <i>name</i> which is defined as the result of the
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >window.prompt()</a
+                >
+                which opens as soon as the function runs. This <i>name</i> is
+                then used in the following
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/API/Window/alert"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >window.alert()</a
+                >
+                which runs using
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >template literals</a
+                >
+                in order to combine the name of the person directly into the
+                message.
+              </p>
+              <p>
+                If I had used regular quotes (""), or ('') without the template
+                strings (``) the name constant wouldn't have appeared, instead
+                what would've been alerted would be "Happy holidays name!"
+                regardless of what the <i>const name</i> had saved.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="sub-level">
-          <div class="sub-level-question">
-            <p>
-              <b>e&#41;</b> Create a function
-              <b>removeDivisibleByThreeOrFive(list)</b> that takes a
-              <b>list</b> of numbers as input and returns the same list but with
-              all numbers divisible by 3 or 5 removed.
-            </p>
-            <p>Example use:</p>
-            <pre>removeDivisibleByThreeOrFive([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]);<br>// =&gt; [1, 2, 4, 7, 8, 11, 13, 14]</pre>
-          </div>
-          <div id="sub-level-solution">
-            <p>Solution:</p>
-            <pre>
+          <div class="sub-level">
+            <div class="sub-level-question">
+              <p>
+                <b>e&#41;</b> Create a function
+                <b>removeDivisibleByThreeOrFive(list)</b> that takes a
+                <b>list</b> of numbers as input and returns the same list but
+                with all numbers divisible by 3 or 5 removed.
+              </p>
+              <p>Example use:</p>
+              <pre>removeDivisibleByThreeOrFive([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]);<br>// =&gt; [1, 2, 4, 7, 8, 11, 13, 14]</pre>
+            </div>
+            <div id="sub-level-solution">
+              <p>Solution:</p>
+              <pre>
 function removeDivisibleByThreeOrFive(list) {
   return list.filter((number) => {
     return number % 3 !== 0 && number % 5 !== 0;
   });
 }
-            </pre>
-            <p>
-              I used the
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter"
-                target="_blank"
-                rel="noopener noreferrer"
-                >filter() method</a
+            </pre
               >
-              together with
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder"
-                target="_blank"
-                rel="noopener noreferrer"
-                >remainder (%) operator</a
-              >
-              to check if the numbers were not divisible by 3 or 5. The filter()
-              method takes a callback function as an argument and returns a new
-              array containing only the elements for which the callback function
-              In this function that means all numbers that are not divisible by
-              3 or 5.
-            </p>
-            <p>
-              I was initally having issues getting anything to console log when
-              testing this function, because I forgot to return the number
-              inside as well as the list. The first time filter returns true or
-              false if the filtered item meets the condition, then it returns
-              the item when true.
-            </p>
+              <p>
+                I used the
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >filter() method</a
+                >
+                together with
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >remainder (%) operator</a
+                >
+                to check if the numbers were not divisible by 3 or 5. The
+                filter() method takes a callback function as an argument and
+                returns a new array containing only the elements for which the
+                callback function In this function that means all numbers that
+                are not divisible by 3 or 5.
+              </p>
+              <p>
+                I was initally having issues getting anything to console log
+                when testing this function, because I forgot to return the
+                number inside as well as the list. The first time filter returns
+                true or false if the filtered item meets the condition, then it
+                returns the item when true.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div id="level">
-        <div class="sub-level">
-          <h2 class="level-title">Level 2</h2>
-          <div class="sub-level-question">
-            <p>
-              <b>a&#41;</b> Create a function
-              <b>printRepeatedRange(x, m, n)</b> that prints the range of
-              numbers from <b>n</b> to <b>m</b> repeatedly <b>x</b> times.
-            </p>
-            <p>Example use:</p>
-            <pre>printRepeatedRange(0, 3, 1)<br><br>0<br>1<br>2<br>3</pre>
-            <pre>printRepeatedRange(3, 6, 2)<br><br>3<br>4<br>5<br>6<br>3<br>4<br>5<br>6</pre>
-            <pre>printRepeatedRange(1, 2, 3)<br><br>1<br>2<br>1<br>2<br>1<br>2</pre>
-          </div>
-          <div id="sub-level-solution">
-            <p>Solution:</p>
-            <pre>
+        <div id="level">
+          <div class="sub-level">
+            <h2 class="level-title">Level 2</h2>
+            <div class="sub-level-question">
+              <p>
+                <b>a&#41;</b> Create a function
+                <b>printRepeatedRange(x, m, n)</b> that prints the range of
+                numbers from <b>n</b> to <b>m</b> repeatedly <b>x</b> times.
+              </p>
+              <p>Example use:</p>
+              <pre>printRepeatedRange(0, 3, 1)<br><br>0<br>1<br>2<br>3</pre>
+              <pre>printRepeatedRange(3, 6, 2)<br><br>3<br>4<br>5<br>6<br>3<br>4<br>5<br>6</pre>
+              <pre>printRepeatedRange(1, 2, 3)<br><br>1<br>2<br>1<br>2<br>1<br>2</pre>
+            </div>
+            <div id="sub-level-solution">
+              <p>Solution:</p>
+              <pre>
 function printRepeatedRange(n, m, x) {
   for (let i = 0; i &lt; x; i++) {
     for (let i = n; i &lt;= m; i++) {
@@ -462,35 +461,35 @@ function printRepeatedRange(n, m, x) {
     }
   }
 }</pre
-            >
-            <p>
-              Here I used a <i>for loop</i> within a <i>for loop</i>. The inner
-              loop console logs the range from n to m, whilst the outer loop
-              runs the inner one x times. Read more about
-              <a
-                href="https://www.freecodecamp.org/news/nesting-for-loops-in-javascript/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >nested for loops here</a
-              >.
-            </p>
+              >
+              <p>
+                Here I used a <i>for loop</i> within a <i>for loop</i>. The
+                inner loop console logs the range from n to m, whilst the outer
+                loop runs the inner one x times. Read more about
+                <a
+                  href="https://www.freecodecamp.org/news/nesting-for-loops-in-javascript/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >nested for loops here</a
+                >.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="sub-level">
-          <div class="sub-level-question">
-            <p>
-              <b>b&#41;</b> Create a function <b>printPattern(n, str)</b> that
-              produces the following patterns for the corresponding input
-              arguments.
-            </p>
-            <p>Example use:</p>
-            <pre>printPattern(5, '*')<br><br>*<br>**<br>***<br>****<br>*****</pre>
-            <pre>printPattern(3, 'x')<br><br>x<br>xx<br>xxx</pre>
-            <pre>printPattern(6, 'ha ')<br><br>ha<br>ha ha<br>ha ha ha<br>ha ha ha ha<br>ha ha ha ha ha<br>ha ha ha ha ha ha</pre>
-          </div>
-          <div id="sub-level-solution">
-            <p>Solution:</p>
-            <pre>
+          <div class="sub-level">
+            <div class="sub-level-question">
+              <p>
+                <b>b&#41;</b> Create a function <b>printPattern(n, str)</b> that
+                produces the following patterns for the corresponding input
+                arguments.
+              </p>
+              <p>Example use:</p>
+              <pre>printPattern(5, '*')<br><br>*<br>**<br>***<br>****<br>*****</pre>
+              <pre>printPattern(3, 'x')<br><br>x<br>xx<br>xxx</pre>
+              <pre>printPattern(6, 'ha ')<br><br>ha<br>ha ha<br>ha ha ha<br>ha ha ha ha<br>ha ha ha ha ha<br>ha ha ha ha ha ha</pre>
+            </div>
+            <div id="sub-level-solution">
+              <p>Solution:</p>
+              <pre>
 function printPattern(n, str) {
   result = '';
 
@@ -501,49 +500,50 @@ function printPattern(n, str) {
 }
 
 printPattern(5, '*');</pre
-            >
-            <p>
-              Works like a charm. Here I could have alternatively used the
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat"
-                target="_blank"
-                rel="noopener noreferrer"
-                >concat() method</a
               >
-              on the string instead of adding to the result, but in essense that
-              is what the concat() method does, adds strings together. I also
-              used a <i>for loop</i> from 0 to n.
-            </p>
+              <p>
+                Works like a charm. Here I could have alternatively used the
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >concat() method</a
+                >
+                on the string instead of adding to the result, but in essense
+                that is what the concat() method does, adds strings together. I
+                also used a <i>for loop</i> from 0 to n.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="sub-level">
-          <div class="sub-level-question">
-            <p>
-              <b>c&#41;</b> Create a function <b>dearSanta(forbidden)</b> where
-              <b>forbidden</b> is a list of items that you are not allowed to
-              ask for, that does the following:
-            </p>
+          <div class="sub-level">
+            <div class="sub-level-question">
+              <p>
+                <b>c&#41;</b> Create a function
+                <b>dearSanta(forbidden)</b> where <b>forbidden</b> is a list of
+                items that you are not allowed to ask for, that does the
+                following:
+              </p>
 
-            <ul>
-              <li>
-                Asks the user via a prompt what he or she wants for Christmas
-              </li>
-              <li>
-                If the requested item is in the list of <b>forbidden</b> items
-                Santa alerts to you that you've been naughty
-              </li>
-              <li>
-                Otherwise Santa alerts to you that you've been nice and will get
-                X for Christmas
-              </li>
-            </ul>
-            <p>Example use:</p>
-            <pre>/**<br> * Example 1<br> */<br>dearSanta(['motorcycle', 'car']);<br><br>"Santa: Ho ho ho! What do you want for Christmas?"<br>=&gt; 'socks'<br>"Santa: You've been nice this year and will get socks for Christmas!"</pre>
-            <pre>/**<br> * Example 2<br> */<br>dearSanta(['motorcycle', 'car']);<br><br>"Santa: Ho ho ho! What do you want for Christmas?"<br>=&gt; 'motorcycle'<br>"Santa: You've been naughty this year and will only get coal in your stockings!"</pre>
-          </div>
-          <div id="sub-level-solution">
-            <p>Solution:</p>
-            <pre>
+              <ul>
+                <li>
+                  Asks the user via a prompt what he or she wants for Christmas
+                </li>
+                <li>
+                  If the requested item is in the list of <b>forbidden</b> items
+                  Santa alerts to you that you've been naughty
+                </li>
+                <li>
+                  Otherwise Santa alerts to you that you've been nice and will
+                  get X for Christmas
+                </li>
+              </ul>
+              <p>Example use:</p>
+              <pre>/**<br> * Example 1<br> */<br>dearSanta(['motorcycle', 'car']);<br><br>"Santa: Ho ho ho! What do you want for Christmas?"<br>=&gt; 'socks'<br>"Santa: You've been nice this year and will get socks for Christmas!"</pre>
+              <pre>/**<br> * Example 2<br> */<br>dearSanta(['motorcycle', 'car']);<br><br>"Santa: Ho ho ho! What do you want for Christmas?"<br>=&gt; 'motorcycle'<br>"Santa: You've been naughty this year and will only get coal in your stockings!"</pre>
+            </div>
+            <div id="sub-level-solution">
+              <p>Solution:</p>
+              <pre>
 function dearSanta(forbidden) {
   const answer = prompt("Santa: Ho ho ho! What do you want for Christmas?");
 
@@ -559,32 +559,32 @@ function dearSanta(forbidden) {
 
 dearSanta(["motorcycle", "car"]);
 </pre
-            >
-            <p>
-              For this solution I used the
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes"
-                target="_blank"
-                rel="noopener noreferrer"
-                >includes() method</a
               >
-              to determines whether an array included the forbidden list or not.
-              If any index value within the forbidden array list would signal
-              true, it would return the first "naughty alert", else it would
-              return false and return the second alert message.
-            </p>
+              <p>
+                For this solution I used the
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >includes() method</a
+                >
+                to determines whether an array included the forbidden list or
+                not. If any index value within the forbidden array list would
+                signal true, it would return the first "naughty alert", else it
+                would return false and return the second alert message.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="sub-level">
-          <div class="sub-level-question">
-            <p>
-              <b>d&#41;</b> Implement "Level 1 b" using recursion instead of
-              loops.
-            </p>
-          </div>
-          <div id="sub-level-solution">
-            <p>Solution:</p>
-            <pre>
+          <div class="sub-level">
+            <div class="sub-level-question">
+              <p>
+                <b>d&#41;</b> Implement "Level 1 b" using recursion instead of
+                loops.
+              </p>
+            </div>
+            <div id="sub-level-solution">
+              <p>Solution:</p>
+              <pre>
 function countDown(fromN) {
   console.log(fromN);
 
@@ -595,47 +595,48 @@ function countDown(fromN) {
   }
 }
 </pre
-            >
-            <p>
-              The
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Glossary/Recursion"
-                target="_blank"
-                rel="noopener noreferrer"
-                >recursive function</a
               >
-              starts by console logging the given argument <i>fromN</i>, then
-              instead of iterating over the number, it defines a new constant
-              <i>newNumber</i> which is 1 less than the argument. The last line
-              is the <i>stop condition</i> within the recursive function that
-              says that as long as the number is not negative, it will call the
-              countDown function by referencing the <i>newNumber</i> within
-              itself, which is what makes this a recursive function.
-            </p>
-            <p>
-              It's important to have a stop condition because otherwise this
-              function would be stuck in an
-              <a
-                href="https://flexiple.com/javascript/infinite-loops-javascript/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >infinite loop</a
-              >
-              as there would always exist a number smaller than
-              <i>fromN</i>
-            </p>
+              <p>
+                The
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Glossary/Recursion"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >recursive function</a
+                >
+                starts by console logging the given argument <i>fromN</i>, then
+                instead of iterating over the number, it defines a new constant
+                <i>newNumber</i> which is 1 less than the argument. The last
+                line is the <i>stop condition</i> within the recursive function
+                that says that as long as the number is not negative, it will
+                call the countDown function by referencing the
+                <i>newNumber</i> within itself, which is what makes this a
+                recursive function.
+              </p>
+              <p>
+                It's important to have a stop condition because otherwise this
+                function would be stuck in an
+                <a
+                  href="https://flexiple.com/javascript/infinite-loops-javascript/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >infinite loop</a
+                >
+                as there would always exist a number smaller than
+                <i>fromN</i>
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="sub-level">
-          <div class="sub-level-question">
-            <p>
-              <b>e&#41;</b> Implement "Level 1 c" using recursion instead of
-              loops.
-            </p>
-          </div>
-          <div id="sub-level-solution">
-            <p>Solution:</p>
-            <pre>
+          <div class="sub-level">
+            <div class="sub-level-question">
+              <p>
+                <b>e&#41;</b> Implement "Level 1 c" using recursion instead of
+                loops.
+              </p>
+            </div>
+            <div id="sub-level-solution">
+              <p>Solution:</p>
+              <pre>
 function printSequence(n, m) {
   let biggerNum;
   let smallerNum;
@@ -669,71 +670,35 @@ function printSequence(n, m) {
 
 printSequence(1, 23);
 </pre
-            >
-            <p>
-              For the last bonus question in this checkpoint I created two
-              variables <i>biggerNum</i> and <i>smallerNum</i>, and left them
-              undefined. Then I handled the case where <i>n</i> is the same as
-              <i>m</i> and returned a string asking for different sized numbers.
-            </p>
-            <p>
-              If the numbers are different I then handled the scenario where
-              <i>n</i>
-              might be bigger than <i>m</i> and vice versa. Now regardless of
-              which number is smaller, the subsequent code works the same by
-              setting the range values to be equal to the previously mentioned
-              variables <i>biggerNum</i> and <i>smallerNum</i>. After that I
-              used <i>if else</i> statments to check whether or not the current
-              number was divisible by 3, 7, or both, followed by a stop
-              condition when the <i>smallerNum</i> reaches the <i>biggerNum</i>.
-            </p>
+              >
+              <p>
+                For the last bonus question in this checkpoint I created two
+                variables <i>biggerNum</i> and <i>smallerNum</i>, and left them
+                undefined. Then I handled the case where <i>n</i> is the same as
+                <i>m</i> and returned a string asking for different sized
+                numbers.
+              </p>
+              <p>
+                If the numbers are different I then handled the scenario where
+                <i>n</i>
+                might be bigger than <i>m</i> and vice versa. Now regardless of
+                which number is smaller, the subsequent code works the same by
+                setting the range values to be equal to the previously mentioned
+                variables <i>biggerNum</i> and <i>smallerNum</i>. After that I
+                used <i>if else</i> statments to check whether or not the
+                current number was divisible by 3, 7, or both, followed by a
+                stop condition when the <i>smallerNum</i> reaches the
+                <i>biggerNum</i>.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- <section id="checkpoint-2">
-      <div id="cp2-question">Checkpoint 2 Question</div>
-      <div id="cp2-solution">Checkpoint 2 Solution</div>
-    </section>
-    <section id="checkpoint-3">
-      <div id="cp3-question">Checkpoint 3 Question</div>
-      <div id="cp3-solution">Checkpoint 3 Solution</div>
-    </section>
-    <section id="checkpoint-4">
-      <div id="cp4-question">Checkpoint 4 Question</div>
-      <div id="cp4-solution">Checkpoint 4 Solution</div>
-    </section>
-    <section id="checkpoint-5">
-      <div id="cp5-question">Checkpoint 5 Question</div>
-      <div id="cp5-solution">Checkpoint 5 Solution</div>
-    </section>
-    <section id="checkpoint-6">
-      <div id="cp6-question">Checkpoint 6 Question</div>
-      <div id="cp6-solution">Checkpoint 6 Solution</div>
-    </section>
-    <section id="checkpoint-7">
-      <div id="cp7-question">Checkpoint 7 Question</div>
-      <div id="cp7-solution">Checkpoint 7 Solution</div>
-    </section>
-    <section id="checkpoint-8">
-      <div id="cp8-question">Checkpoint 8 Question</div>
-      <div id="cp8-solution">Checkpoint 8 Solution</div>
-    </section>
-    <section id="checkpoint-9">
-      <div id="cp9-question">Checkpoint 9 Question</div>
-      <div id="cp9-solution">Checkpoint 9 Solution</div>
-    </section>
-    <section id="checkpoint-10">
-      <div id="cp10-question">Checkpoint 10 Question</div>
-      <div id="cp10-solution">Checkpoint 10 Solution</div>
-    </section>
-    <section id="checkpoint-11">
-      <div id="cp11-question">Checkpoint 11 Question</div>
-      <div id="cp11-solution">Checkpoint 11 Solution</div>
-    </section>
-    <section id="checkpoint-12">
-      <div id="cp12-question">Checkpoint 12 Question</div>
-      <div id="cp12-solution">Checkpoint 12 Solution</div>
-    </section> -->
+      </section>
+      <footer>
+        <div class="footer-nav-first-page">
+          <a href="./checkpoint-2.html#checkpoint-2">Checkpoint 2</a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

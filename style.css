@@ -1,16 +1,19 @@
 /* GENERAL */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  margin: 2rem;
+  margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
+#main-container {
+  margin: 2rem;
+}
 a {
   font-weight: 700;
   color: rgb(7, 162, 147);
@@ -40,22 +43,14 @@ pre {
   font-weight: 700;
 }
 
-.website-description {
-  margin: 0 20vw;
-}
-
-#home {
-  height: 100vh;
-}
-
-#home-container {
+#website-description {
   position: relative;
-  top: -2rem;
-  height: 85%;
+  top: 3rem;
+  height: 60vh;
   display: flex;
-  max-height: max-content;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  margin: 0 2rem;
 }
 
 img {
@@ -64,44 +59,31 @@ img {
   height: 100%;
 }
 
-/* NAV */
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-nav h2 {
-  text-align: right;
-}
-nav h1,
-h2 {
-  font-size: 1.5rem;
-}
-
 /* SECTIONS */
 
 section {
-  padding-top: 1rem;
+  padding-top: 2.5rem;
 }
 
 /* CHECKPOINT DIRECTORY */
 
-#checkpoint-button-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  gap: 1rem;
-  margin: 0 20vw;
+nav {
+  height: 3rem;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-basis: wrap;
+  width: 100%;
+  z-index: 200;
 }
 
 .checkpoint-button {
+  flex: 1;
   background-color: #146556;
   border: none;
   color: #f6f6f6;
   padding: 0.8rem 0.3rem;
   font-weight: 700;
-  border-radius: 5px;
   cursor: pointer;
   text-align: center;
   transition: background-color 0.2s ease;
@@ -120,61 +102,24 @@ section {
 
 .hover-container:hover .overlay {
   opacity: 1;
+  z-index: 100;
 }
 
 .overlay {
   position: absolute;
-  top: 110%;
-  left: 50%;
-  transform: translate(-50%, 0);
+  top: 100%;
+  left: 0;
   opacity: 0;
   transition: opacity 0.5s ease;
   background-color: #154a67;
   color: #fff;
   text-align: center;
-  border-radius: 5px;
   pointer-events: none;
 }
 
 .overlay p {
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   margin: 1rem;
-}
-
-/* DROPDOWN MENU */
-
-.dropdown {
-  position: relative;
-  display: none;
-  background-color: #146556;
-  margin: 0 auto;
-  border: none;
-  color: #f6f6f6;
-  padding: 0.8rem 0.3rem;
-  font-weight: 700;
-  border-radius: 5px;
-  cursor: pointer;
-  text-align: center;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  top: 2.75rem;
-  left: 0;
-  background-color: #154a67;
-  padding: 0 1rem;
-  z-index: 1;
-  margin: 0 auto;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.drowdown-link {
-  color: white;
-  text-decoration: none;
 }
 
 /* CHECKPOINTS */
@@ -189,37 +134,30 @@ section {
   padding: 1rem 0;
 }
 
-/* MEDIA QUERIES */
+/* FOOTER */
 
-@media screen and (max-width: 1000px) {
-  .website-description,
-  #checkpoint-button-container {
-    margin: 0 3rem;
-  }
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
 }
 
-@media screen and (max-width: 700px) {
-  nav h1,
-  h2 {
-    font-size: 1.2rem;
-    margin-top: 0;
-  }
-  h1 {
-    font-size: 1.2rem;
-  }
+.footer-nav-first-page {
+  display: flex;
+  justify-content: flex-end;
+}
 
-  body {
-    margin: 1rem;
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 700px) {
+  #main-container,
+  #website-description {
+    margin: 0 1rem;
   }
   #home-container {
     justify-content: flex-start;
     gap: 1.5rem;
     top: 0;
   }
-  .website-description {
-    margin: 0;
-  }
-
   #checkpoint-button-container {
     display: none;
   }
