@@ -109,32 +109,159 @@
           <div class="sub-level">
             <div class="sub-level-question">
               <p>
-                Implement the following design of a feedback form. Try to use
-                semantic HTML elements where applicable. It should be centered
-                horizontally. It should use the background color
-                <b>#ffbab5</b>. Bonus points for the gradient button!
+                <b>a&#41;</b> What are the primitive values we have available in
+                JavaScript? Create an example of each of them as a variable..
               </p>
-              <figure>
-                <img
-                  style="max-width: 400px"
-                  src="/Assets/checkpoint-2/level-1-form.png"
-                  alt="Feecback form design"
-                />
-              </figure>
+            </div>
+            <div id="sub-level-solution">
+              <p>
+                In JavaScript, there are six primitive data types that are used
+                to represent basic values:
+              </p>
+              <ol>
+                <li>
+                  Boolean: The Boolean data type represents a logical value of
+                  true or false.
+                </li>
+                <li>
+                  Null: The Null data type represents a deliberate non-value,
+                  used to indicate that a variable has no value.
+                </li>
+                <li>
+                  Undefined: The Undefined data type represents a variable that
+                  has been declared but has not been assigned a value.
+                </li>
+                <li>
+                  Number: The Number data type represents a numeric value,
+                  including integers and floating-point numbers.
+                </li>
+                <li>
+                  String: The String data type represents a sequence of
+                  characters, enclosed in quotes.
+                </li>
+                <li>
+                  Symbol: The Symbol data type represents a unique identifier,
+                  used primarily as the key for object properties.
+                </li>
+              </ol>
+              <p>
+                These primitive data types are immutable, which means that their
+                values cannot be changed once they are created. Other data types
+                in JavaScript, such as objects and arrays, are mutable and can
+                be changed after they are created.
+              </p>
+              <pre>
+// Examples of the six types of primitive values.
+
+let bool = true;
+let nothing = null;
+let undef;
+let num = 1;
+let str = "hello";
+let sym = Symbol();</pre
+              >
+            </div>
+            <div class="sub-level-question">
+              <p>
+                <b>b&#41;</b> Provide a short explanation of the concept of
+                truthy and falsy-ness, and list the falsy values in JavaScript.
+              </p>
+            </div>
+            <div id="sub-level-solution">
+              <p>
+                In JavaScript, values can be evaluated as either "truthy" or
+                "falsy". A value is considered "truthy" if it is considered true
+                when evaluated in a Boolean context, and "falsy" if it is
+                considered false. This is important when using conditional
+                statements or Boolean logic. In general, the following values
+                are considered falsy in JavaScript:
+              </p>
+              <ul>
+                <li>false: The Boolean value false is always falsy.</li>
+                <li>NaN: The value NaN (Not a Number) is falsy.</li>
+                <li>0: The number 0 is falsy.</li>
+                <li>"" (empty string): An empty string is falsy.</li>
+                <li>null: The value null is falsy.</li>
+                <li>undefined: The value undefined is falsy.</li>
+              </ul>
+              <p>
+                Note that all other values, including non-empty strings,
+                non-zero numbers, and non-null objects, are considered truthy.
+                Truthy and falsy values are important to keep in mind when using
+                conditional statements and other constructs that depend on
+                Boolean logic. For example, in an if statement, a condition that
+                evaluates to a falsy value will be treated as false, while a
+                truthy value will be treated as true.
+              </p>
+            </div>
+            <div class="sub-level-question">
+              <p>
+                <b>c&#41;</b> <b>getSecondWord(str)</b> is supposed get the
+                second word of a string of multiple words, but at the moment it
+                isn't working quite right - see if you can figure out and
+                explain what is wrong and provide a working solution.
+              </p>
+              <pre>function getSecondWord(stringOfWords) {<br>  var words = stringOfWords.split(' ');<br>  return words[2];<br>}<br><br>getSecondWord('hello my good friend');</pre>
+            </div>
+            <div id="sub-level-solution">
+              <p>
+                By console logging the function as given in the example the word
+                "good" is logged on the console. The third word of the sentence.
+                This points us to the return statement in our bug-checking, and
+                as we can see the number 2 is returning the third word, because
+                when we use the
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >split() method</a
+                >
+                we are saving the result in an array, which is zero-index based,
+                which means that the first word in the array would be in
+                position [0], and the second, which we want to return is at
+                position, or index [1]. When we correct the function with this
+                new index, the second word "my" is successfully returned.
+              </p>
+              <pre>
+function getSecondWord(stringOfWords) {
+  var words = stringOfWords.split(" ");
+  return words[1];
+}
+
+console.log(getSecondWord("hello my good friend")); // => my</pre
+              >
+            </div>
+            <div class="sub-level-question">
+              <p>
+                <b>d&#41;</b> The following piece of code attempts to ask the
+                user for two numbers and then log out the sum of those two
+                numbers. This doesn't seem to work quite as expected - see if
+                you can spot the issue, explain what the problem is, and provide
+                a working solution.
+              </p>
+              <pre>function addNumbers() {<br>  var a = prompt('First number');<br>  var b = prompt('Second number');<br>  var result = a + b;<br>  console.log(result);<br>}<br><br>addNumbers();</pre>
             </div>
             <div id="sub-level-solution">
               <p>Solution:</p>
+              <pre>
+function volumeOfSphere(r) {
+  return (4 / 3) * Math.PI * r ** 3;
+}
+              
+console.log(volumeOfSphere(3)); // 113.09
+console.log(volumeOfSphere(2)); // 33.51
+            </pre
+              >
               <p>
-                Check out the finished form
+                I used the unbuilt JavaScript
                 <a
-                  href="/Solutions/checkpoint-2/level-1.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >here</a
-                >.
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/PI"
+                  target="”_blank”"
+                  >Math.PI static data property</a
+                >
+                to calculate the volume of a sphere. I found the formula on
+                Google as shown below.
               </p>
-              <p>Solution code and pictures go here.</p>
-              <p>Describing my choices go here.</p>
             </div>
           </div>
         </div>
