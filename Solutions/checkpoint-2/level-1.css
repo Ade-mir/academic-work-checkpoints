@@ -1,0 +1,81 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: linear-gradient(to right top, #f39b94, #ffbab5);
+  height: 100vh;
+}
+
+body,
+fieldset {
+  display: flex;
+}
+
+body,
+fieldset,
+input,
+textarea {
+  margin: 0;
+}
+
+form {
+  height: 420px;
+  width: 380px;
+  padding: 2rem 3rem;
+  margin: auto;
+  background: white;
+  border-radius: 0.5rem;
+}
+
+fieldset {
+  flex-direction: column;
+  gap: 2rem;
+  border: none;
+  padding: 0;
+}
+
+legend {
+  padding-bottom: 2rem;
+  font-weight: bolder;
+  color: rgb(206, 56, 56);
+}
+
+label {
+  display: none;
+}
+
+input,
+textarea {
+  padding: 0.5rem;
+}
+
+textarea {
+  resize: none;
+}
+
+button,
+legend {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+button {
+  background: linear-gradient(
+    to right top,
+    rgb(255, 137, 137),
+    rgb(206, 56, 56)
+  );
+  border: none;
+  border-radius: 0.2rem;
+  color: white;
+  font-weight: 600;
+  font-size: 0.75rem;
+  padding: 0.3rem 1.2rem;
+}
+
+button:hover {
+  background: linear-gradient(
+    to right top,
+    rgba(255, 137, 137, 0.8),
+    rgba(206, 56, 56, 0.8)
+  );
+  cursor: pointer;
+}

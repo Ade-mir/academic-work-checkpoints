@@ -4,9 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Feedback form</title>
+    <link rel="stylesheet" href="level-1.css" />
   </head>
   <body>
-    TEST
+    <form action="post" method="post">
+      <fieldset>
+        <legend>FEEDBACK FORM</legend>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+          required
+        />
+        <label for="subject">Subject</label>
+        <input
+          type="text"
+          name="subject"
+          id="subject"
+          placeholder="Subject"
+          required
+        />
+        <label for="message">Message</label>
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Message"
+          required
+        ></textarea>
+        <button type="submit">SUBMIT</button>
+      </fieldset>
+    </form>
   </body>
 </html>
